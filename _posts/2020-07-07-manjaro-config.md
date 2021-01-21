@@ -129,6 +129,8 @@ sudo pacman -Sy archlinuxcn-keyring
    - v2ray & qv2ray: ladders.
    - [texlive](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet/): $\LaTeX$. [ref](https://tuna.moe/assets/slides/latex-talk-v2.0.pdf).
    - [autojump](https://github.com/wting/autojump): quickly jumping in commandline. **Pay attention to post-install messages!**
+   - [autotrash](https://github.com/bneijt/autotrash): automatically clear outdated trash in the trashbin.
+     - Refer to the github main page to auto run.
     
 ### 字体 ###
 
