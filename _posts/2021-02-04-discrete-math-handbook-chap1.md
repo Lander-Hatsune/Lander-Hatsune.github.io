@@ -48,7 +48,7 @@ permalink: /DM-handbook
 用结点表示A, B, C, D四组队伍, 用边表示比赛获胜关系, 则下图可表示:
 A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 
-![img](/figures/discrete-math/1.1.1.svg "图 1.1.1 表示关系的边")
+![img](/figures/discrete-math/1.1.1.png "图 1.1.1 表示关系的边")
 
 
 <a id="org4f6b32b"></a>
@@ -57,7 +57,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 
 用结点表示A, B, C, D四个城市, 用边表示两两间的道路距离(以 `km` 为单位):
 
-![img](/figures/discrete-math/1.1.2.svg "图 1.1.2 表示距离的边")
+![img](/figures/discrete-math/1.1.2.png "图 1.1.2 表示距离的边")
 
 
 <a id="org8f1dd73"></a>
@@ -73,7 +73,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 -   考察A, 与A相连的五条边中, **必然存在3条黑色边或存在3条蓝色边**.
 -   若存在三条蓝色边, 连向B, C, E, 如图.
     
-    ![img](/figures/discrete-math/1.1.3.svg "图 1.1.3 图论建模")
+    ![img](/figures/discrete-math/1.1.3.png "图 1.1.3 图论建模")
     
     则若B, C, E间存在一条蓝色边, 就与A构成 **蓝色三角形**, 若B, C, E间不存在蓝色边, 就构成 **黑色三角形**.
 -   若存在三条黑色边, 类似可证.
@@ -106,7 +106,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 
 -   **孤立点:** 结点 $v$ 没有与之相关联的边.
     
-    ![img](/figures/discrete-math/1.1.8.svg "图 1.1.8 孤立点")
+    ![img](/figures/discrete-math/1.1.8.png "图 1.1.8 孤立点")
 
 -   **邻点集 $\Gamma(v)$:** 与结点 $v$ 具有一定关系的相邻结点的集合.
     -   对无向图, $\Gamma(v) = \{u | \langle u, v \rangle \in E\}$.
@@ -115,20 +115,20 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
         -   直接后继集(外邻集) $\Gamma^+(v) = \{u | \langle v, u \rangle \in E\}$,
         -   直接前趋集(内邻集) $\Gamma^-(v) = \{u | \langle u, v \rangle \in E\}$.
         
-        ![img](/figures/discrete-math/1.1.9.svg "图 1.1.9 前趋集与后继集")
+        ![img](/figures/discrete-math/1.1.9.png "图 1.1.9 前趋集与后继集")
 
 -   **有向边:** 具有方向, 用箭头表示. 有向边也可称为 **弧**.
     
     -   $v_i$ 是 $e_k$ 的 **始点**, $v_j$ 是 **终点**.
     -   $v_i$ 是 $v_j$ 的 **直接前趋**, $v_j$ 是 $v_i$ 的 **直接后继**.
     
-    ![img](/figures/discrete-math/1.1.5.svg "图 1.1.5 有向边")
+    ![img](/figures/discrete-math/1.1.5.png "图 1.1.5 有向边")
 
 -   **无向边:** 没有方向, 简单的实线.
     
     -   $v_i$ 和 $v_j$ 是 $e_k$ 的两个 **端点**.
     
-    ![img](/figures/discrete-math/1.1.6.svg "图 1.1.6 无向边")
+    ![img](/figures/discrete-math/1.1.6.png "图 1.1.6 无向边")
 
 -   **重边:** 同一对结点间存在的多条边.
     -   对于有向边, 还要求方向相同.
@@ -137,7 +137,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 -   **自环:** 只与一个结点关联.
     -   如: 下图 $e_2, e_3$.
 
-![img](/figures/discrete-math/1.1.4.svg "图 1.1.4 重边与自环")
+![img](/figures/discrete-math/1.1.4.png "图 1.1.4 重边与自环")
 
 
 <a id="org99cedb9"></a>
@@ -154,7 +154,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
     -   等价于 每个结点都是孤立点.
 -   **完全图:** **任意** 两结点间都有边的 **简单图**. 用 $K_n$ 表示.
 
-![img](/figures/discrete-math/1.1.7.svg "图 1.1.7 简单图, 空图, 完全图")
+![img](/figures/discrete-math/1.1.7.png "图 1.1.7 简单图, 空图, 完全图")
 
 ---
 
@@ -172,7 +172,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 -   **赋权图:** **每条边** 都具有实数权值, 常记作 $w$.
     -   **正权图:** **每条边** 权值均为正.
 
-![img](/figures/discrete-math/1.1.2.svg "图 1.1.2 正权图一例")
+![img](/figures/discrete-math/1.1.2.png "图 1.1.2 正权图一例")
 
 
 <a id="org14fb703"></a>
@@ -182,7 +182,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 -   图 $G$ 中, 某结点 $v$ 所关联的边数称该结点的 **度**, 记作 $d(v)$.
 -   若 $v$ 带有自环, 则自环对 $d(v)$ 的贡献为 **2**.
     
-    ![img](/figures/discrete-math/1.1.4.svg "图1.1.4")
+    ![img](/figures/discrete-math/1.1.4.png "图1.1.4")
     
     如上图, $d(v_2) = 5$.
 
@@ -204,7 +204,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 
 构成 $G'$, 称其为 $G$ 的子图.
 
-![img](/figures/discrete-math/1.1.10.svg "图 1.1.10 子图")
+![img](/figures/discrete-math/1.1.10.png "图 1.1.10 子图")
 
 -   **支撑子图(生成子图):** 若 $V = V'$, 即结点取全.
 -   **导出子图:** 若 $E'$ 包含(等于) $G$ 中所有与 $V'$ 关联的边.
