@@ -119,7 +119,8 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
         -   直接后继集(外邻集) $\Gamma^+(v) = \{u  \lvert  \langle v, u \rangle \in E\}$,
         -   直接前趋集(内邻集) $\Gamma^-(v) = \{u  \lvert  \langle u, v \rangle \in E\}$.
         
-        <img style="margin: auto;" src="/figures/discrete-math/1.1.9.svg"> <p class="text-center"> 图 1.1.9 前趋集与后继集</p>
+    <img style="margin: auto;" src="/figures/discrete-math/1.1.9.svg">
+    <p class="text-center"> 图 1.1.9 前趋集与后继集</p>
 
 -   **有向边:** 具有方向, 用箭头表示. 有向边也可称为 **弧**.
     
@@ -192,7 +193,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 -   若 $v$ 带有自环, 则自环对 $d(v)$ 的贡献为 **2**.
     
     <img style="margin: auto;" src="/figures/discrete-math/1.1.4.svg"> 
-    <p class="textf-center"> 图1.1.4</p>
+    <p class="text-center"> 图1.1.4 度</p>
     
     如上图, $d(v_2) = 5$.
 
