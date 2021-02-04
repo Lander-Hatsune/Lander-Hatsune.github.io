@@ -87,7 +87,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 -   结点集 $V(G)$ 是 **非空集合**. $E(G)$ 为边集.
     -   **注意**: **结点集是非空的**, 我们将 **边集为空集** 的图定义为空图.
 -   $V = \{v_1, v_2, \cdots, v_n\}, E = \{e_1, e_2, \cdots, e_n\}$.
--   $|V| = n$ 称为图 $G$ 的 **阶**.
+-   $ \lvert V \lvert  = n$ 称为图 $G$ 的 **阶**.
 
 
 <a id="orge41c586"></a>
@@ -109,11 +109,11 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
     ![img](/figures/discrete-math/1.1.8.png "图 1.1.8 孤立点")
 
 -   **邻点集 $\Gamma(v)$:** 与结点 $v$ 具有一定关系的相邻结点的集合.
-    -   对无向图, $\Gamma(v) = \{u | \langle u, v \rangle \in E\}$.
+    -   对无向图, $\Gamma(v) = \{u  \lvert  \langle u, v \rangle \in E\}$.
     -   对有向图
         
-        -   直接后继集(外邻集) $\Gamma^+(v) = \{u | \langle v, u \rangle \in E\}$,
-        -   直接前趋集(内邻集) $\Gamma^-(v) = \{u | \langle u, v \rangle \in E\}$.
+        -   直接后继集(外邻集) $\Gamma^+(v) = \{u  \lvert  \langle v, u \rangle \in E\}$,
+        -   直接前趋集(内邻集) $\Gamma^-(v) = \{u  \lvert  \langle u, v \rangle \in E\}$.
         
         ![img](/figures/discrete-math/1.1.9.png "图 1.1.9 前趋集与后继集")
 
@@ -150,7 +150,7 @@ A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 
 -   **简单图:** **不存在重边, 不存在自环** 的 **无向图**.
 -   **空图:** **没有任何边** 的(简单)图. 用 $N_n$ 表示.
-    -   **等价** 于 $|E| = 0$.
+    -   **等价** 于 $ \lvert E \lvert  = 0$.
     -   等价于 每个结点都是孤立点.
 -   **完全图:** **任意** 两结点间都有边的 **简单图**. 用 $K_n$ 表示.
 
