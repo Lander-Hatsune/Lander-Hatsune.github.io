@@ -49,7 +49,7 @@ permalink: /DM-handbook
 A胜B, C, D, B胜C, D胜C, 而B, D间未比赛.
 
 ![img](/figures/discrete-math/1.1.1.svg)
-
+<p class="text-center">Image Caption</p>
 
 <a id="org4f6b32b"></a>
 
