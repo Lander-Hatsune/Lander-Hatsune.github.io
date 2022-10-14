@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://lander-hatsune.github.io/sitemap.xml
