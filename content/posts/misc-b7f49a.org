@@ -1,0 +1,50 @@
+#+title: "英文单词"
+#+date: 2022-10-17T16:09:33+08:00
+#+category: Misc
+#+tags: ["英语", "单词本"]
+#+author: "Lander"
+#+draft: true
+#+description: ""
+
+| Words                  | Class    | Zh                           | En                                                                                                                           |
+|------------------------+----------+------------------------------+------------------------------------------------------------------------------------------------------------------------------|
+| abutted                | adj      |                              | adjancent                                                                                                                    |
+| ad-lib                 | v        | 即兴演出                     |                                                                                                                              |
+| advent                 | n        | 到来                         | the coming of an important event, person, invention, etc.                                                                    |
+| advertent              | adj      | 注意的, 留意的               |                                                                                                                              |
+| arrogant               | adj      | 傲慢的                       |                                                                                                                              |
+| ask for a (sick) leave | phr      | 请(病)假                     |                                                                                                                              |
+| baffled                | adj      | 困惑的                       |                                                                                                                              |
+| chronicle              | n        | 编年史                       |                                                                                                                              |
+| congregation           | n        |                              | The people who are attending a church service or who regularly attend a church service are referred to as the congregation . |
+| credulous              | adj      | 轻信的, 易受欺骗的           |                                                                                                                              |
+| de facto               | adj; adv | 实际上的, 事实上的           | existing as a fact although it may not be legally accepted as existing                                                       |
+| de novo                | adv      | 重新开始                     |                                                                                                                              |
+| elaborate              | adj; v   | 复杂的, 精心制作的; 详尽阐述 |                                                                                                                              |
+| elapse                 | vi; n    | 消逝                         |                                                                                                                              |
+| eschew                 | v;       |                              | If you eschew something, you deliberately avoid doing it or becoming involved in it.                                         |
+| flatter                | v        | 奉承                         |                                                                                                                              |
+| gauge                  | v; n     | 测量, 判断                   |                                                                                                                              |
+| goof                   | v        | 摸鱼                         |                                                                                                                              |
+| hallucinate            | v        |                              | If you hallucinate, you see things that are not really there, either because you are ill or because you have taken a drug.   |
+| idempotent             | adj      | 幂等的                       |                                                                                                                              |
+| impetus                | n        | 动力, 动机                   |                                                                                                                              |
+| inadvertent            | adj      | 无意的, 疏忽造成的           |                                                                                                                              |
+| indignant              | adj      | 愤怒的                       |                                                                                                                              |
+| lingo                  | n        | 术语, 行话                   |                                                                                                                              |
+| masquerade             | v        | 伪装                         |                                                                                                                              |
+| perpetrate             | v        | 犯(罪), 做(错事), 干(坏事)   | If someone perpetrates a crime or any other immoral or harmful act, they do it.                                              |
+| resemble               | v        |                              | If one thing or person resembles another, they are similar to each other.                                                    |
+| serendipity            | n        |                              | Serendipity is the luck some people have in finding or creating interesting or valuable things by chance.                    |
+| stipend                | n        | 津贴                         |                                                                                                                              |
+| synopsis               | n        | 梗概                         |                                                                                                                              |
+| taxonomy               | n        | (生物)分类学                 |                                                                                                                              |
+| tectonic               | adj      | 地壳构造的                   |                                                                                                                              |
+| tenant                 | n        | 房客, 租户                   |                                                                                                                              |
+| terse                  | adj      | 简要的, 简短生硬的           |                                                                                                                              |
+| timeglass/hourglass    | n        | 沙漏                         |                                                                                                                              |
+| unpretentious          | adj      | 朴实无华的, 谦虚谨慎的       |                                                                                                                              |
+
+
+
+
