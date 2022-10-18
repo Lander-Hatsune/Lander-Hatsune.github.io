@@ -14,6 +14,16 @@
 
 [[/assets/misc-f69d93.jpg]]
 
+* 笔记
+
+** =L= 键
+
+#+begin_quote
+[[https://zh.wikipedia.org/wiki/%E4%BA%94%E7%AC%94%E5%AD%97%E5%9E%8B%E8%BE%93%E5%85%A5%E6%B3%95#%E3%80%8CL%E3%80%8D%E9%94%AE][Wikipedia]] \\
+编码方案对单笔画字的编码规定为“两个单笔画字母加两个L”，如一（GGLL）、
+丨（HHLL）、丿（TTLL）、丶（YYLL）、乙（NNLL）
+#+end_quote
+
 * 还没学会的字
 
 | 字 | 形码 | 备注                     |
