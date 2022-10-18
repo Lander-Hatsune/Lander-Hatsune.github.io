@@ -4,6 +4,12 @@
 #+author: Lander
 #+draft: false
 
+#+begin_quote
+有用的字码本
+#+end_quote
+
+# more
+
 * 字码
 
 [[/assets/misc-f69d93.jpg]]
