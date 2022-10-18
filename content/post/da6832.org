@@ -4,8 +4,84 @@
 #+author: Lander
 #+draft: false
 
+[[https://www.cs.colostate.edu/~cs253/Spring21/Lecture/Casting][Colorado CS253 Casting]]
 
+# more
 
+* Notes
+
+- Casting is generally a mistake.
+- Dont think that casting and "conversion" are the same.
+- No form of casting will convert a =string= containing digits to an
+  =int= or =double=.
+  - use =stoi=, =stod=, (=to_string= as reverse)
+  
+** C-style casting: =(type) value=
+
+- Too powerful:
+#+begin_src cpp
+  long l = (long) "Krypto the Superdog";
+  cout << l << '\n'; // 4196616
+#+end_src
+
+** Constructor "casting": =type(value)=
+
+#+begin_src cpp
+n = int(3.14);
+#+end_src
+
+** =const_cast<type>(value)=
+
+- can only change constness
+
+#+begin_src cpp
+  char *p = "bad";
+  //warning: ISO C++ forbids converting a string constant to 'char*'
+
+  char *q = const_cast<char*>("good");
+
+  const double *n = const_cast<const double*>("bad");
+  //error: invalid const_cast from type 'const char*' to type 'double*'
+#+end_src  
+
+** =static_cast<type>(value)=
+
+- usual conversions
+- also used to downcast <a pointer to base class>
+  to <a pointer to derived class>, without type checking.
+- also used to convert =void*= to/from any other pointer type.
+
+#+begin_src cpp
+  int i = static_cast<int>(3.14);
+  int i = static_cast<int>("123");
+  // error: invalid static_cast from type 'const char [4]' to type 'int'
+#+end_src
+
+** =dynamic_cast<type>(value)=
+
+- Convert <a pointer to base class> to
+  <a pointer to derived class>
+- much like static_cast, but this does type checking
+  for polymorphic types containing virtual methods.
+
+#+begin_src cpp
+class Base {
+  public:
+    virtual void foo() { }
+};
+class Derived: public Base { };
+ 
+Base b, *bp = &b;
+Derived *dp = dynamic_cast<Derived *>(bp);
+if (dp == nullptr) // true
+    cout << "Conversion failed.\n";
+else
+    cout << "Conversion succeeded.\n";
+#+end_src
+
+** =reinterpret_cast<type>(value)=
+
+- go nuts, like C-style casting
 
 
 
