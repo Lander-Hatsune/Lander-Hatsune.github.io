@@ -1,0 +1,25 @@
+#+title: 点子们
+#+date: 2022-10-18T16:17:00+08:00
+#+tags[]: 点子 TODO
+#+author: Lander
+#+draft: false
+
+# more
+
+* 一起看电影
+
+=还需调研= =SaaS= =轮子=
+
+- keyword: sync player
+
+* 五笔/拼音的输入序列有差
+
+=五笔= =新研究= =还需调研=
+
+- [[https://github.com/MadRabbit/keyboard-genetics][keyboard-genetics]]
+- 体验上: 拼音打字有相较下更多的"多指协同", 而五笔常有同指连续按键, 如"特征"
+  - 使用拼音时按键频率更高, 使用五笔时输入速度更高
+- 可以通过定义手指距离评价输入序列, 参考上仓库
+
+
+    
