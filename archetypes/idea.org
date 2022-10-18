@@ -1,7 +1,0 @@
-#+title: ""
-#+date: {{ .Date }}
-#+category: Idea
-#+tags: [""]
-#+author: "Lander"
-#+draft: true
-#+description: ""

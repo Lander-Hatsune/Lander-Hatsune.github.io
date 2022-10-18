@@ -1,7 +1,0 @@
-#+title: ""
-#+date: {{ .Date }}
-#+category: Hack
-#+tags: [""]
-#+author: "Lander"
-#+draft: true
-#+description: ""

@@ -1,10 +1,10 @@
-#+title: "五笔"
+#+title: 五笔
 #+date: 2022-10-17T16:01:20+08:00
 #+category: Misc
-#+tags[]: ["五笔", "单词本"]
+#+tags[]: 五笔 单词本
 #+author: "Lander"
-#+draft: true
-#+description: ""
+#+draft: false
+#+description: 有用的字码本
 
 * 字码
 

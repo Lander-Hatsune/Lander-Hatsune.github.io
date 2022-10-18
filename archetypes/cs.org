@@ -1,7 +1,0 @@
-#+title: ""
-#+date: {{ .Date }}
-#+category: CS
-#+tags: [""]
-#+author: "Lander"
-#+draft: true
-#+description: ""

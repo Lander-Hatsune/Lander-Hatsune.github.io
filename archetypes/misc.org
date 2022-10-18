@@ -1,7 +1,0 @@
-#+title: ""
-#+date: {{ .Date }}
-#+category: Misc
-#+tags: [""]
-#+author: "Lander"
-#+draft: true
-#+description: ""
