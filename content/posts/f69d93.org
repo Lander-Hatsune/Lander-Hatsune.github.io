@@ -1,6 +1,7 @@
 #+title: 五笔
 #+date: 2022-10-17T16:01:20+08:00
-#+tags[]: 杂项 五笔 单词本
+#+categories[]: misc
+#+tags[]: wubi
 #+author: Lander
 #+draft: false
 

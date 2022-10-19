@@ -1,6 +1,7 @@
 #+title: C/C++ 的类型转换 (Casting)
 #+date: 2022-10-18T15:08:12+08:00
-#+tags[]: CS C/C++ 类型 CSU 课程 笔记
+#+categories[]: note
+#+tags[]: C/C++ lecture collection
 #+author: Lander
 #+draft: false
 
