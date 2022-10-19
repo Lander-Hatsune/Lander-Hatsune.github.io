@@ -1,0 +1,14 @@
+#+title: 一些顺眼的配置
+#+date: 2022-10-19T13:58:36+08:00
+#+tags[]: 配置 外观 Gnome
+#+author: Lander
+#+draft: false
+
+# more
+
+* 字体
+
+- Interface: =Noto Sans Display Regular 11=
+- Document: =Noto Sans Display Regular 11=
+- Monospace: =MesloLGS Nerd Font Mono Regular 12=
+- Antialiasing: Standard(Greyscale)
