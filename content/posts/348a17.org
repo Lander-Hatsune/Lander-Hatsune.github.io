@@ -10,18 +10,26 @@
 
 * 一起看电影
 
-=还需调研= =SaaS= =轮子=
+=已经实现= =轮子= =mpv= =frp=
 
-- keyword: sync player
+最终的解决方案
+
+- [[https://syncplay.pl/][SyncPlay]]
+- 客户端播放器: Windows 端可以用 [[https://github.com/mpvnet-player/mpv.net][mpv.net]]
+- 服务端: 部署一下发现对方未知原因无法连接; 于是选择本地部署 + frp
 
 * 五笔/拼音的输入序列有差
 
-=五笔= =新研究= =还需调研=
+=五笔= =研究= =还需调研=
 
 - [[https://github.com/MadRabbit/keyboard-genetics][keyboard-genetics]]
 - 体验上: 拼音打字有相较下更多的"多指协同", 而五笔常有同指连续按键, 如"特征"
   - 使用拼音时按键频率更高, 使用五笔时输入速度更高
 - 可以通过定义手指距离评价输入序列, 参考上仓库
+  
+* LOL vampire survivors
+
+=还需调研= =游戏= =开发= =长期项目=
 
 
     
