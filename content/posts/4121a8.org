@@ -1,0 +1,127 @@
+#+title: Note of "How to Make a Roguelike"
+#+date: 2022-10-25T17:16:53+08:00
+#+categories[]: note
+#+tags[]: game roguelike dev tutorial
+#+author: Lander
+#+draft: false
+
+[[https://www.gamedeveloper.com/design/how-to-make-a-roguelike][How to Make a Roguelike]]
+
+- Start with a beeline for target, a basic plan.
+  First implement game core, then extra elements.
+- This is a start, the end depends on you ;)
+
+# more
+
+
+* (programming) Language
+
+- Python: simple, yet extensive, plenty of resources & references
+- C/C++: numerous resources & references
+- A bunch of other languages
+
+* Scope
+
+- Build up some experience first.
+- Go through the entire dev process at least once or twice before
+  starting larger serious projects.
+- Keep your scope small at first.
+  - focus on the main path first
+  - to have a complete thing to show for your efforts
+
+
+#+begin_center
+[[https://www.gridsagegames.com/blog/gsg-content/uploads/2018/10/mapgen_stages_1.png]] \\
+The Main path
+#+end_center
+
+
+#+begin_center
+[[https://www.gridsagegames.com/blog/gsg-content/uploads/2018/10/mapgen_stages_final.png]] \\
+Develop on the main path in piecemeal style 
+#+end_center
+
+* Core Mechanic
+
+- What is needed at least to make your roguelike fun?
+- What is unique?
+  
+* 7DRL (7-days roguelike)
+
+- Not your first game, but recommended when you have at least some experience,
+  having a deadline really does help.
+- "start small and expand as necessary after you’ve confirmed
+  your core mechanic seems like a good idea."
+
+** Examples
+
+[[https://www.gamedeveloper.com/design/how-to-make-a-roguelike#:~:text=Let%E2%80%99s%20take%20a%20look%20at%20a%20few%20examples%E2%80%A6][...]]
+  
+* Resources
+
+- [[https://www.reddit.com/r/roguelikedev/][r/RoguelikeDev]]
+- [[https://www.gamedeveloper.com/design/how-to-make-a-roguelike#:~:text=but%20yeah%20%3AP)-,Resources,-One%20of%20the][...]]
+  
+* Assets
+
+- ASCII
+  - with combinations of fg/bg colors
+  - [[https://www.gridsagegames.com/rexpaint/][REXPaint]]: an ASCII art editor
+    
+- Tilesets
+  - good-looking
+  - maybe not only for your game
+
+* Good Starting Points
+
+- Attract others, hooks
+  - core mechanic, replayability
+  - audiovisual features
+  - theme
+    
+* Theme
+
+- historical, mythological
+- sci-fi
+- ...
+
+* XRLs
+
+- Base on existing IPs
+- [[http://www.roguebasin.com/index.php?title=Roguelikes_based_on_Existing_IPs][list of examples on RogueBasin]]
+
+
+- /be careful of particularly litigious companies/
+- RLs are niche and under radar, fine for hobby projects
+- Only those earning great profits would have to worry about
+  this sort of things.
+  - But by that time you can either rebrand it to your own content,
+    or should probably have enough experience to be comfortable
+    working on your own ideas from scratch.
+- *In any case, definitely forget having any commercial aspirations
+  with an existing IP!*
+
+  
+* Tips for the Lone Run
+
+** Release Early and Often
+  
+- "minimal playable state"  
+  
+** [[https://www.reddit.com/r/roguelikedev/search?q=title%3A%22Sharing+Saturday%22+OR+title%3A%22Screenshot+Saturday%22&restrict_sr=on&sort=new&t=all][Sharing Saturday]]
+
+** Keep a Blog
+
+- organize your thoughts
+- examine your work from a different angle
+- document the process
+- create a useful long-term reference
+- get feedback
+- build a community
+  
+** Accessibility
+
+- Mouse support
+- Better looking
+
+
