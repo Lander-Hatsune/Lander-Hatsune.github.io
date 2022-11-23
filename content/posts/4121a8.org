@@ -124,4 +124,8 @@ Develop on the main path in piecemeal style
 - Mouse support
 - Better looking
 
+* Comments
+
+- 了解新框架时, 随便试试也是有趣的过程
+  - 可能在主路径上开发和在测试项目中随意的探索能相辅相成吧
 
