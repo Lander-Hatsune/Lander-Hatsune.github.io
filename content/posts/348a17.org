@@ -8,7 +8,15 @@
 
 # more
 
-* 一起看电影
+* Lander-Hatsune.github.io                                             :DONE:
+
+=已经实现= =博客= =Hugo=
+
+- Framework: [[https://gohugo.io/][Hugo]]
+- Theme: [[https://xmin.yihui.org/][XMin]]
+- [-] diary private submodule
+
+* 一起看电影                                                           :DONE:
 
 =已经实现= =轮子= =mpv= =frp=
 
@@ -18,7 +26,7 @@
 - 客户端播放器: Windows 端可以用 [[https://github.com/mpvnet-player/mpv.net][mpv.net]]
 - 服务端: 部署一下发现对方未知原因无法连接; 于是选择本地部署 + frp
 
-* 五笔/拼音的输入序列有差
+* 五笔/拼音的输入序列有差                                              :TODO:
 
 =五笔= =研究= =还需调研=
 
@@ -27,9 +35,18 @@
   - 使用拼音时按键频率更高, 使用五笔时输入速度更高
 - 可以通过定义手指距离评价输入序列, 参考上仓库
   
-* LOL vampire survivors
+* LOL vampire survivors                                                :TODO:
 
-=还需调研= =游戏= =开发= =长期项目=
+=还需调研= =游戏= =开发= =长期项目= =LOL=
 
+- [[https://www.cbr.com/league-of-legends-roguelike-mode-issues-riot-games/][League of Legends' Biggest Issues Can Be Solved With a Roguelike Mode]]
+- 自适应难度: 根据 Build 调整 *适合* 的敌方
 
-    
+* [[https://github.com/Lander-Hatsune/loledi][loledi]]                                                               :DONE:
+
+=已经实现= =长期项目= =视频剪辑= =LOL=
+
+- 用大跨度找 KDAChange, 倍增/二分
+
+** KDARecog
+
