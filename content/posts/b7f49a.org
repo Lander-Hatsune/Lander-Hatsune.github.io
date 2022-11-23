@@ -23,7 +23,9 @@
 | chronicle              | n        | 编年史                       |                                                                                                                              |
 | congregation           | n        |                              | The people who are attending a church service or who regularly attend a church service are referred to as the congregation . |
 | credulous              | adj      | 轻信的, 易受欺骗的           |                                                                                                                              |
+| dabble in              | phr      | 涉猎                         |                                                                                                                              |
 | de facto               | adj; adv | 实际上的, 事实上的           | existing as a fact although it may not be legally accepted as existing                                                       |
+| demoralize             | v        |                              | If something demoralizes someone, it makes them lose so much confidence in what they are doing that they want to give up.    |
 | de novo                | adv      | 重新开始                     |                                                                                                                              |
 | elaborate              | adj; v   | 复杂的, 精心制作的; 详尽阐述 |                                                                                                                              |
 | elapse                 | vi; n    | 消逝                         |                                                                                                                              |
@@ -38,6 +40,7 @@
 | indignant              | adj      | 愤怒的                       |                                                                                                                              |
 | lingo                  | n        | 术语, 行话                   |                                                                                                                              |
 | masquerade             | v        | 伪装                         |                                                                                                                              |
+| pedestal               | n        | 基座                           |                                                                                                                              |
 | perpetrate             | v        | 犯(罪), 做(错事), 干(坏事)   | If someone perpetrates a crime or any other immoral or harmful act, they do it.                                              |
 | resemble               | v        |                              | If one thing or person resembles another, they are similar to each other.                                                    |
 | serendipity            | n        |                              | Serendipity is the luck some people have in finding or creating interesting or valuable things by chance.                    |
@@ -49,6 +52,7 @@
 | terse                  | adj      | 简要的, 简短生硬的           |                                                                                                                              |
 | timeglass/hourglass    | n        | 沙漏                         |                                                                                                                              |
 | unpretentious          | adj      | 朴实无华的, 谦虚谨慎的       |                                                                                                                              |
+
 
 
 
