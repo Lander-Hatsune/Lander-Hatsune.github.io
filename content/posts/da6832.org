@@ -1,4 +1,4 @@
-#+title: C/C++ 的类型转换 (Casting)
+#+title: Note of "Colorado CS253 Casting"
 #+date: 2022-10-18T15:08:12+08:00
 #+categories[]: note
 #+tags[]: C/C++ lecture collection
