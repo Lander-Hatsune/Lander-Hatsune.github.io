@@ -1,0 +1,61 @@
+#+title: 双缓冲 (Double buffering)
+#+date: 2021-12-17
+#+categories[]: computer-science
+#+tags[]: antique graphics 
+#+author: Lander
+#+draft: false
+
+#+begin_quote
+2021-12-17, 答疑所得
+#+end_quote
+
+# more
+
+* 问题
+
+- 显存要实时显示内容
+- 切换内容时要刷新显存, 但速度不够快
+- 于是会造成闪烁
+
+* 解决方案
+
+双缓冲:
+
+- 用另一块同显存一样大的空间保存下一帧
+- 逐像素绘制下一帧时, 显存保持上一帧不变
+- 下一帧绘制完成后, 统一拷贝到显存, 这个过程够快
+
+* Win32 API 实现示例
+
+#+begin_src c
+  case WM_ERASEBKGND: {
+    return 1; // do not erase
+  }
+  case WM_PAINT: {
+    PAINTSTRUCT ps;
+    HDC hdc_old = BeginPaint(hwnd, &ps);  
+
+    HDC hdc = CreateCompatibleDC(hdc_old);
+
+    RECT clientRect;
+    GetClientRect(hwnd, &clientRect);
+
+    HBITMAP hBmp = CreateCompatibleBitmap(hdc_old, clientRect.right,
+                                          clientRect.bottom);
+
+    SelectObject(hdc,hBmp);
+
+    // paint on hdc
+
+    BitBlt(hdc_old, 0, 0, clientRect.right, clientRect.bottom,
+           hdc, 0, 0, SRCCOPY);
+
+    DeleteObject(hBmp);
+    DeleteDC(hdc);
+    ReleaseDC(hwnd, hdc);
+    EndPaint(hwnd, &ps);
+
+    return 0;
+  }
+#+end_src
+
