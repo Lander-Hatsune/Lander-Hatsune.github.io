@@ -6,5 +6,8 @@ title: Home
 
 # Lander.Notes
 
-## _some of what I learned_
+_some of what I learned_
+
+> "There's always time for tea."
+
 
