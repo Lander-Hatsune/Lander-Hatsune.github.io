@@ -40,8 +40,9 @@
 | indignant              | adj      | 愤怒的                       |                                                                                                                              |
 | lingo                  | n        | 术语, 行话                   |                                                                                                                              |
 | masquerade             | v        | 伪装                         |                                                                                                                              |
-| pedestal               | n        | 基座                           |                                                                                                                              |
+| pedestal               | n        | 基座                         |                                                                                                                              |
 | perpetrate             | v        | 犯(罪), 做(错事), 干(坏事)   | If someone perpetrates a crime or any other immoral or harmful act, they do it.                                              |
+| rendezvous             | n; vi    | 会合点; 会合                 |                                                                                                                              |
 | resemble               | v        |                              | If one thing or person resembles another, they are similar to each other.                                                    |
 | serendipity            | n        |                              | Serendipity is the luck some people have in finding or creating interesting or valuable things by chance.                    |
 | stipend                | n        | 津贴                         |                                                                                                                              |
