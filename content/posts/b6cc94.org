@@ -1,0 +1,103 @@
+#+title: Note of "Multi-Goal Reinforcement Learning: Challenging Robotics Environments and Request for Research"
+#+date: 2022-11-26T19:29:36+08:00
+#+categories[]: note
+#+tags[]: AI:OpenAI AI:RL AI:HER paper robotics
+#+author: Lander
+#+draft: false
+
+[[https://openai.com/blog/ingredients-for-robotics-research/][Ingredients for Robotics Research]]
+
+基本上是: HER 应用于 SparseReward 的机器人控制场景
+
+# more
+
+注: 原文使用的环境和 GoalEnv API 在当年都是 gym 下的,
+后来被 [[https://github.com/openai/gym/pull/2516][移除]] 出来成了 [[https://github.com/Farama-Foundation/Gymnasium-Robotics][Gymnasium-Robotics]]
+
+* Env
+
+有两类, 各四个
+
+- Fetch
+  - 7DoF 的机械臂(只用了 4 度), 前端有一个夹子
+  - 主要关注手臂旋转以使前端位移, 交互只有夹取和放下
+  - 25 steps per second
+  - =goal=: Box(3), 物体的目标坐标 / 夹子的目标坐标
+  - =action=: Box(4), 前三维是夹子移动的方向, 最后一维是夹子的夹取/放下
+  - =observation=: 物体的坐标, 线速度(?), 夹子的坐标, 线速度, 以及二者的相对
+    运动数据(如果物体存在)
+    #+begin_quote
+    注: 此处可能是文章歧义, 原文如下
+    Observations include the Cartesian position of the gripper, its
+    linear velocity as well as the position and linear velocity of the robot’s gripper. If an object is present,
+    we also include the object’s Cartesian position and rotation using Euler angles, its linear and angular
+    velocities, as well as its position and linear velocities relative to gripper.
+    #+end_quote
+  - =reward=: 每步 -1, 成功为 0 (即 SparseReward, 也有 DenseReward 的测试)
+  - 任务: Reach, Push, Slide, PickAndPlace
+
+- ShadowHand
+  - 24DoF 的机械手, 主要关注五个手指的协调动作以操控小物体
+  - 任务: HandReach, HandManipulateBlock,
+    HandManipulateEgg, HandManipulatePen
+
+** GoalEnv
+
+- 所有环境都有 Goal 的概念, 使用 [[https://robotics.farama.org/content/multi-goal_api/#goalenv][GoalEnv]] 的 API
+  - 注: 本来是 =gym.GoalEnv= 的, [[https://stable-baselines3.readthedocs.io/en/master/_modules/stable_baselines3/common/envs/bit_flipping_env.html#BitFlippingEnv][一个实例]]
+      
+* 算法: DDPG + HER
+
+Hindsight Experience Replay, 将 Goal 也作为模型输入,
+在模型失败时, ReplayMemory 会记忆下这个 Policy "达到了这个失败的目标",
+从而在失败中也能学习(而不是只收到 =-1= Reward 而没有学习),
+以此达到学习不同目标(包括成功的目标)的效果.
+
+#+begin_quote
+Even though we have not succeeded at a specific goal,
+we have at least achieved a different one.
+#+end_quote
+
+HER 是 ReplayMemory 的一个修改, 适于任何同样使用 ReplayMemory 的
+off-policy 方法.
+
+使用四套方法进行测试
+
+- DDPG + HER w/ sparse rewards
+- DDPG w/ sparse rewards
+- DDPG + HER w/ dense rewards
+- DDPG w/ dense rewards
+
+* 训练
+
+- 五个简单任务: FetchReach, FetchPush, FetchSlide, FetchPickAndPlace, HandReach
+  - 19 核 CPU, 2 并发 Rollout, 50 epoch, 4.75e6 episodes,
+- 另四个复杂任务
+  - 200 epoch, 38e6 episodes
+    
+- 测试: 多次 Deterministic 的 Rollout 的成功率
+
+- 以上使用 5 个不同随机种子重复实验
+
+* 结果
+
+[[https://openai.com/content/images/2018/02/HandManipulateBlockRotateXYZ-v0@2x.png]]
+
+注: 更多结果见 [[https://arxiv.org/abs/1802.09464][PDF 报告]]
+
+- Fetch
+  - FetchReach 明显简单, 四套算法都能成功解决
+  - 其它任务中, DDPG + HER 更好
+    - SparseReward 结果更好, 但也可以从 DenseReward 中成功
+  - DDPG 用 DenseReward 更好
+- Hand
+  - DDPG + HER 更好, 其中 SparseReward 也更好
+  - DDPG 经常不能完成任务
+  - RotatePen 尤为复杂, 最终都未能成功
+
+* 分析
+
+- Critic 用 SparseReward 训练更简单, 它只需要区分成功与否
+- DenseReward 会驱使 Policy 向一个特定的策略(但不一定是
+  最简单或最有效的策略), SparseReward 只是鼓励 Policy 能达到目标(更直接)
+
