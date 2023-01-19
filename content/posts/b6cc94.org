@@ -27,7 +27,7 @@
   - =observation=: 物体的坐标, 线速度(?), 夹子的坐标, 线速度, 以及二者的相对
     运动数据(如果物体存在)
     #+begin_quote
-    注: 此处可能是文章歧义, 原文如下
+    注: 此处可能是文章笔误, 原文如下
     Observations include the Cartesian position of the gripper, its
     linear velocity as well as the position and linear velocity of the robot’s gripper. If an object is present,
     we also include the object’s Cartesian position and rotation using Euler angles, its linear and angular
