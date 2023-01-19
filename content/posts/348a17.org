@@ -14,7 +14,7 @@
 
 - Framework: [[https://gohugo.io/][Hugo]]
 - Theme: [[https://xmin.yihui.org/][XMin]]
-- [-] diary private submodule
+- [X] diary private +submodule+ subdir
 
 * 一起看电影                                                           :DONE:
 
@@ -46,7 +46,8 @@
 
 =已经实现= =长期项目= =视频剪辑= =LOL=
 
-- 用大跨度找 KDAChange, 倍增/二分
+- [X] 用大跨度找 KDAChange, 倍增/二分
+- [X] 更好的可视化
 
 ** KDARecog
 
